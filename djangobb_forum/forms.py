@@ -3,12 +3,14 @@ from __future__ import unicode_literals
 
 import os.path
 from datetime import timedelta
+import string
 
 from django import forms
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
+from django.utils.text import get_valid_filename
 
 from djangobb_forum.models import Topic, Post, Profile, Reputation, Report, \
     Attachment, Poll, PollChoice
