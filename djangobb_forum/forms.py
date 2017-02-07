@@ -11,6 +11,7 @@ from django.contrib.auth import get_user_model
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
 from django.utils.text import get_valid_filename
+from django.template.defaultfilters import filesizeformat
 
 from djangobb_forum.models import Topic, Post, Profile, Reputation, Report, \
     Attachment, Poll, PollChoice
